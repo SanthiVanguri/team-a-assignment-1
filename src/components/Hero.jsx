@@ -2,18 +2,19 @@ import React from 'react';
 import { Button } from "@/components/ui/button";
 import BoxReveal from "@/components/magicui/box-reveal";
 import Image from 'next/image';
+import { BackgroundBeams } from './ui/background-beams';
 
 export const Hero = () => {
     return (
-        <div className="flex flex-col lg:flex-row items-center justify-center min-h-[calc(100vh-112px)] w-full px-10 gap-10">
-            <Image
+        <div className="flex flex-col lg:flex-row items-center justify-center min-h-[calc(100vh-112px)] w-full px-10 gap-16 bg-[#02030e]">
+            {/* <Image
                 className='z-[0] overflow-hidden'
                 src="/herobg.svg"
                 alt="Cover Image"
                 layout="fill"
                 objectFit="cover"
                 quality={100}
-            />
+            /> */}
             <div className="flex-2 items-start justify-start lg:min-h-[600px]  p-5 z-[5]">
                 <BoxReveal boxColor={"#6B59ED"} duration={0.5}>
                     <p className="text-md text-[#6B59ED] font-semibold">
@@ -21,36 +22,36 @@ export const Hero = () => {
                     </p>
                 </BoxReveal>
                 <BoxReveal boxColor={"#6B59ED"} duration={0.5}>
-                    <h2 className="mt-[.5rem] text-[#454C5F] text-[2em] md:text-[3rem] font-bold ">
+                    <h2 className="mt-[.5rem] text-[#c9c6ec] text-[2em] md:text-[3rem] font-bold ">
                         Learn AI in 2 Months <br /> and Get Job Ready
                     </h2>
                 </BoxReveal>
                 <BoxReveal boxColor={"#6B59ED"} duration={0.5} className="w-full">
-                    <div className="flex flex-wrap justify-between mt-[1.5rem] gap-4 w-full md:min-w-[520px]">
-                        <div className="flex flex-col gap-4 w-full md:w-[48%]">
-                            <p className="flex items-center gap-1">
+                    <div className="flex flex-wrap justify-between mt-[1.5rem] gap-4 w-full md:min-w-[520px] text-[#c9c6ec]">
+                        <div className="flex flex-col gap-4 w-full md:w-[48%] ">
+                            <p className="flex items-center gap-2">
                                 <Image src="/arrow.svg" alt="arrow" height={14} width={14} />
                                 1 Year Course Access
                             </p>
-                            <p className="flex items-center gap-1">
+                            <p className="flex items-center gap-2">
                                 <Image src="/arrow.svg" alt="arrow" height={14} width={14} />
                                 Live Mentorship by Experts
                             </p>
-                            <p className="flex items-center gap-1">
+                            <p className="flex items-center gap-2">
                                 <Image src="/arrow.svg" alt="arrow" height={14} width={14} />
                                 Internship Certificate
                             </p>
                         </div>
                         <div className="flex flex-col gap-4 w-full md:w-[48%]">
-                            <p className="flex items-center gap-1">
+                            <p className="flex items-center gap-2">
                                 <Image src="/arrow.svg" alt="arrow" height={14} width={14} />
                                 40+ Hours of Live Class
                             </p>
-                            <p className="flex items-center gap-1">
+                            <p className="flex items-center gap-2">
                                 <Image src="/arrow.svg" alt="arrow" height={14} width={14} />
                                 2 Capstone Projects
                             </p>
-                            <p className="flex items-center gap-1">
+                            <p className="flex items-center gap-2">
                                 <Image src="/arrow.svg" alt="arrow" height={14} width={14} />
                                 Course Completion Certificate
                             </p>
@@ -76,36 +77,36 @@ export const Hero = () => {
                 </BoxReveal>
 
             </div>
-            <div className="flex flex-col items-center justify-center w-full p-5 m-5 max-w-[400px] rounded-xl bg-[#6B59ED] h-[609px] z-[5]">
-                <h1 className="text-white text-2xl font-semibold">Join the AI Revolution</h1>
-                <h3 className="text-white text-md font-thin">Over 200 students have already</h3>
-                <h3 className="text-white text-md font-thin">registered for the next batch!</h3>
+            <div className="flex flex-col items-center justify-center w-full p-4 m-4 max-w-[400px] rounded-xl bg-[#6B59ED] h-auto z-[5]">
+                <h1 className="text-white text-2xl font-semibold text-center">Join the AI Revolution</h1>
+                <h3 className="text-white text-md font-thin text-center">Over 200 students have already</h3>
+                <h3 className="text-white text-md font-thin text-center mb-4">registered for the next batch!</h3>
 
                 <input
                     type="text"
                     placeholder="Your Name"
-                    className="mt-4 w-[339px] h-[40px] px-3 py-2 rounded-[10px_10px_0px_10px] bg-[#F7FAFF] text-[#393939] text-[15px] font-[Poppins] font-normal focus:outline-none"
+                    className="mt-2 w-full max-w-[339px] h-[40px] px-3 py-2 rounded-t-lg rounded-bl-lg bg-[#F7FAFF] text-[#393939] text-[15px] font-[Poppins] font-normal focus:outline-none"
                 />
 
                 <input
                     type="email"
                     placeholder="Email Address"
-                    className="mt-4 w-[339px] h-[40px] px-3 py-2 rounded-[10px_10px_0px_10px] bg-[#F7FAFF] text-[#393939] text-[15px] font-[Poppins] font-normal focus:outline-none"
+                    className="mt-4 w-full max-w-[339px] h-[40px] px-3 py-2 rounded-t-lg rounded-bl-lg bg-[#F7FAFF] text-[#393939] text-[15px] font-[Poppins] font-normal focus:outline-none"
                 />
 
                 <input
                     type="tel"
                     placeholder="Phone Number"
-                    className="mt-4 w-[339px] h-[40px] px-3 py-2 rounded-[10px_10px_0px_10px] bg-[#F7FAFF] text-[#393939] text-[15px] font-[Poppins] font-normal focus:outline-none"
+                    className="mt-4 w-full max-w-[339px] h-[40px] px-3 py-2 rounded-t-lg rounded-bl-lg bg-[#F7FAFF] text-[#393939] text-[15px] font-[Poppins] font-normal focus:outline-none"
                 />
 
                 <label className="mt-4 text-white text-sm text-start w-full px-4">
                     When do you want to start?
                 </label>
 
-                <div className="relative">
+                <div className="relative w-full max-w-[339px]">
                     <select
-                        className="appearance-none mt-2 w-[339px] h-[40px] px-4 py-2 rounded-[10px_10px_0px_10px] bg-[#F7FAFF] text-[#393939] text-[15px] font-[Poppins] font-normal focus:outline-none "
+                        className="appearance-none mt-2 w-full h-[40px] px-4 py-2 rounded-t-lg rounded-bl-lg bg-[#F7FAFF] text-[#393939] text-[15px] font-[Poppins] font-normal focus:outline-none"
                         style={{
                             backgroundImage: `url('/down.svg'), linear-gradient(to bottom, #F7FAFF 0%, #F7FAFF 100%)`,
                             backgroundRepeat: 'no-repeat',
@@ -130,7 +131,7 @@ export const Hero = () => {
 
                 <button
                     type="submit"
-                    className="mt-4 w-[339px] h-[40px] px-[143.02px] py-[12.5px] flex justify-center items-center rounded-[10px_10px_0px_10px] bg-[#EDBF01] text-[#393939] text-[16px] font-semibold focus:outline-none"
+                    className="mt-4 w-full max-w-[339px] h-[40px] flex justify-center items-center rounded-t-lg rounded-bl-lg bg-[#EDBF01] text-[#393939] text-[16px] font-semibold focus:outline-none"
                 >
                     SUBMIT
                 </button>
@@ -150,9 +151,7 @@ export const Hero = () => {
                 </p>
             </div>
 
-
-
-
+            <BackgroundBeams />
         </div>
     )
 }
