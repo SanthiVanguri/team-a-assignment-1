@@ -2,6 +2,7 @@ import { Feedback } from "@/components/Feedback";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { Module } from "@/components/Module";
+import { PromoCard } from "@/components/PromoCard";
 import { Vanaja } from "@/components/Vanaja";
 
 export default function Home() {
@@ -9,7 +10,8 @@ export default function Home() {
     <>
       <Header />
       <Hero/>
-      {/* <Module/> */}
+      <Module/>
+      <PromoCard/>
       {/* <Vanaja/> */}
       {/* <Feedback/> */}
       {/* <main className="flex min-h-screen flex-col items-center justify-between ">

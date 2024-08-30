@@ -69,7 +69,7 @@ export const Hero = () => {
 
                         <Image src="/★.svg" alt="arrow" height={14} width={14} />
 
-                        <p className="text-sm font-semibold text-[#454C5F]">
+                        <p className="text-sm font-semibold text-[#bdb9e2]">
                             Rated 4.9/5 from over 600 reviews<span className="text-[#6B59ED]">.</span>
                         </p>
                     </div>
